@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<form action="https://fom.in.ua/echo" method="post">
+		<fieldset>
+			<legend>Реєстрація</legend>
+			<p>
+				<label>
+					Імʼя*
+					<input type="text" name="name" required autofocus>
+				</label>
+			</p>
+			<p>
+				<label>
+					Телефон*
+					<input type="tel" name="phone" required>
+				</label>
+			</p>
+			<p>
+				<label>
+					E-mail*
+					<input type="email" name="email" required>
+				</label>
+			</p>
+			<p>
+				<label>
+					Пароль*
+					<input type="password" id="pass" name="pass_me" required>
+				</label>
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Підбір рейсу</legend>
+			<p>
+				<label>
+					Звідкіля
+					<select name="city">
+						<optgroup label="Україна">
+							<option value="kyiv selected">Київ</option>
+							<option value="lviv">Львів</option>
+							<option value="odesa">Одеса</option>
+						</optgroup>
+						<optgroup label="Польща">
+							<option value="warsaw">Варшава</option>
+							<option value="krakiv">Краків</option>
+							<option value="slot">Солот</option>
+						</optgroup>
+					</select>
+				</label>
+			</p>
+			<p>
+				<label>
+					Куди
+					<select name="city2">
+						<optgroup label="Україна">
+							<option value="kyiv selected">Київ</option>
+							<option value="lviv">Львів</option>
+							<option value="odesa">Одеса</option>
+						</optgroup>
+						<optgroup label="Польща">
+							<option value="warsaw">Варшава</option>
+							<option value="krakiv">Краків</option>
+							<option value="slot">Солот</option>
+						</optgroup>
+					</select>
+				</label>
+			</p>
+			<p>
+				<label>
+					Туди
+					<input type="date" name="date">
+				</label>
+			</p>
+			<p>
+				<label>
+					Назад
+					<input type="date" name="date">
+				</label>
+			</p>
+			<label>
+				Кількість білетів
+				<input type="number" name="count_ticket" value="1">
+			</label>
+			<p><strong>Діти</strong></p>
+			<p>
+				<label>
+					<input type="radio" name="children" value="without_children" checked>
+					Без дітей
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="radio" name="children" value="1_child">
+					1 дитина
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="radio" name="children" value="2_children">
+					2 дитини
+				</label>
+			</p>
+			<p><strong>Комфорт</strong></p>
+			<p>
+				<label>
+					<input type="checkbox" name="more_space_for_legs">
+					Більше місця для ніг
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="food">
+					Харчування
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="more_space_for_baggage" checked>
+					Більше місця для багажу
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="window_place">
+					Місце біля вікна
+				</label>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox" name="place_in_first_line">
+					Місце в першому ряду
+				</label>
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Інформація по страхуваню</legend>
+			<p>
+				<label>
+					<input type="checkbox" name="need_insurance" checked>
+					Мені потрібне страхування
+				</label>
+			</p>
+			<p><strong>Завантажте копію паспорту</strong></p>
+			<p>
+				<label>
+					<input type="file" name="file">
+				</label>
+			</p>
+
+			<label>
+				<textarea name="info" placeholder="Додаткова інформація"></textarea>
+			</label>
+		</fieldset>
+		<p>
+			<button type="submit">Надіслати форму</button>
+			<button type="reset">Очистити</button>
+		</p>
+	</form>
+
+</body>
+
+</html>
